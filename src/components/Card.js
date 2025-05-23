@@ -3,8 +3,8 @@ import  Backup  from "../assets/images/backup.jpg";
 
 export const Card = ({movie}) => {
 
-  const {id , original_title,overview, backdrop_path} = movie;
-  const image = backdrop_path ? `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}` : Backup;
+  const {id , original_title,overview, poster_path} = movie;
+  const image = poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup;
 
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
