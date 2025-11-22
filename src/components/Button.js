@@ -1,5 +1,5 @@
 export const Button = ({children}) => {
   return (
-    <button className='rounded-lg px-5 py-2.5 mr-2 mb-2 font-medium text-white w-64 text-xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700'>{children}</button>
+    <button className='rounded-lg px-6 py-3 font-medium text-white w-full sm:w-64 text-lg sm:text-xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-800 transition-all duration-300 shadow-md hover:shadow-lg'>{children}</button>
   )
 }

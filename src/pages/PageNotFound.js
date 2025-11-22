@@ -9,14 +9,14 @@ export const PageNotFound = () => {
     
   return (
     <main>
-      <section className = "flex flex-col justify-center px-2">
-        <div className="flex flex-col items-center my-4">
-          <p className='text-7xl text-gray-700 font-bold my-10 dark:text-white'>404 , Oops!</p>
-          <div lclassName = "w-96">
-            <img className="rounded min-w-80 h-auto" src={PageNotFoundImg} alt= "404 Page Not Found " />
+      <section className = "flex flex-col justify-center items-center px-4 py-8">
+        <div className="flex flex-col items-center my-4 max-w-2xl">
+          <p className='text-5xl sm:text-6xl md:text-7xl text-gray-700 font-bold my-10 dark:text-white text-center'>404, Oops!</p>
+          <div className = "w-full max-w-md">
+            <img className="rounded-lg w-full h-auto shadow-lg" src={PageNotFoundImg} alt= "404 Page Not Found" />
           </div>
         </div>
-        <div className='flex justify-center my-4'>
+        <div className='flex justify-center my-8'>
           <Link to = "/">
             <Button>Back To Cinemate</Button>
           </Link>

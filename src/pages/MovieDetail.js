@@ -23,13 +23,13 @@ export const MovieDetail = () => {
 
   return (
     <main>
-      <section className="flex justify-around flex-wrap py-5">
-        <div className="max-w-sm">
-          <img className="rounded" src={image} alt={movie.title} />
+      <section className="flex flex-col lg:flex-row justify-center lg:justify-around items-start gap-8 py-8 px-4">
+        <div className="w-full max-w-sm mx-auto lg:mx-0 flex-shrink-0">
+          <img className="rounded-lg w-full shadow-lg" src={image} alt={movie.title} />
         </div>
-        <div className = "max-w-2xl text-gray-700 text-lg dark:text-white">
-          <h1 className="text-4xl font-bold my-3 tex-center lg:text-left">{movie.title}</h1>
-          <p className="my-4">{movie.overview}</p>
+        <div className = "w-full max-w-2xl text-gray-700 text-base md:text-lg dark:text-white">
+          <h1 className="text-3xl md:text-4xl font-bold my-3 text-center lg:text-left">{movie.title}</h1>
+          <p className="my-4 text-justify">{movie.overview}</p>
 
             { movie.genres ? (
             <p className="my-7 flex flex-wrap gap-2">

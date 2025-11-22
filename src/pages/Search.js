@@ -14,11 +14,11 @@ export const Search = ({apiPath}) => {
 
   return (
     <main>
-      <section className="py-7">
-        <p className="text-3xl text-gray-700 dark:text-white">{ movies.length === 0 ? `No result found for '${queryTerm}'` : `Result for '${queryTerm}'`}</p>
+      <section className="py-7 px-4">
+        <p className="text-2xl md:text-3xl text-gray-700 dark:text-white text-center">{ movies.length === 0 ? `No result found for '${queryTerm}'` : `Result for '${queryTerm}'`}</p>
       </section>
-      <section className="max-w-7xl mx-auto py-7">
-        <div className="flex justify-start flex-wrap gap-5">
+      <section className="max-w-7xl mx-auto py-7 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8 justify-items-center">
           {movies.map((movie) => (
             <Card key={movie.id} movie={movie}/>
           )) }
